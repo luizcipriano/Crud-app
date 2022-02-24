@@ -1,0 +1,35 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #656565;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 60px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  input {
+    height: 80px;
+    width: 300px;
+  }
+  button {
+    height: 80px;
+    width: 300px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.employee {
+  border: 1px solid violet;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
