@@ -1,10 +1,11 @@
 .App {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: #656565;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   h1 {
     font-size: 60px;
   }
@@ -14,22 +15,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   gap: 1rem;
+  width: 25vw;
+  label {
+    font-size: 2rem;
+  }
   input {
     height: 80px;
     width: 300px;
+    min-width: 100px;
   }
   button {
     height: 80px;
     width: 300px;
+    min-width: 100px;
+
     &:hover {
       cursor: pointer;
     }
   }
 }
-.employee {
-  border: 1px solid violet;
+.employees {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 50vw;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3rem;
+  button {
+    width: 25vw;
+    height: 10vh;
+    margin: 0 auto;
+  }
+  .employee {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid violet;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+  }
 }
